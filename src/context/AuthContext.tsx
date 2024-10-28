@@ -1,4 +1,3 @@
-// AuthProvider.tsx
 import { createContext, useState, useEffect, ReactNode } from 'react';
 
 // Define la interfaz para el contexto de autenticación

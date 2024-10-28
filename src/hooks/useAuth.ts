@@ -1,4 +1,3 @@
-// useAuth.ts
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext'; // Importa el contexto de autenticación desde AuthProvider
 

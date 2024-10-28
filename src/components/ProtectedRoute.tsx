@@ -1,8 +1,8 @@
-import { Navigate } from 'react-router-dom';
-import { useAuth } from '../hooks/useAuth';
+import { Navigate } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
 
 interface ProtectedRouteProps {
-  element: JSX.Element; 
+  element: JSX.Element;
 }
 
 // Componente para proteger rutas

@@ -1,4 +1,4 @@
-import { getSpotifyLoginUrl } from '../services/auth';
+import { getSpotifyLoginUrl } from "../services/auth";
 
 const Login = () => {
   const handleLogin = () => {

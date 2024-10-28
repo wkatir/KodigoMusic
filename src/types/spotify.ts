@@ -1,20 +1,23 @@
 export interface Track {
-    id: string;
-    name: string;
-    artists: Array<{
-      name: string;
-    }>;
-    album: {
-      images: Array<{
-        url: string;
-      }>;
-    };
+  id: string;
+  uri: string;
+  name: string;
+  album: {
     uri: string;
-  }
-  
-  export interface SearchResponse {
-    tracks: {
-      items: Track[];
-    };
-  }
-  
+    name: string;
+    images: Array<{
+      url: string;
+      height: number;
+      width: number;
+    }>;
+  };
+  artists: Array<{
+    uri: string;
+    name: string;
+  }>;
+}
+
+export interface SpotifyPlayerProps {
+  track: Track | null;
+  onPlaybackStateChange?: (isPlaying: boolean) => void;
+}

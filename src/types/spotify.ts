@@ -16,8 +16,9 @@ export interface Track {
     name: string;
   }>;
 }
-
-export interface SpotifyPlayerProps {
-  track: Track | null;
-  onPlaybackStateChange?: (isPlaying: boolean) => void;
-}
+  export interface SearchResponse {
+    tracks: {
+      items: Track[];
+    };
+  }
+  

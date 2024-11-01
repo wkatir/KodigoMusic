@@ -2,13 +2,13 @@ import { AuthProvider } from './context/AuthContext';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Search from './pages/Search';
 import Login from './pages/Login';
-import Callback from './pages/Callback'; 
+import Callback from './pages/Callback';
 import ProtectedRoute from './components/ProtectedRoute';
 import NotFound from './pages/NotFound';
 
 const App = () => {
-   // Crea el enrutador con las rutas definidas
-   const router = createBrowserRouter([
+  // Crea el enrutador con las rutas definidas
+  const router = createBrowserRouter([
     {
       path: '/',
       element: <Login />, // Ruta para la página de inicio de sesión
@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <AuthProvider>
-      <RouterProvider router={router} /> 
+      <RouterProvider router={router} />
     </AuthProvider>
   );
 }
